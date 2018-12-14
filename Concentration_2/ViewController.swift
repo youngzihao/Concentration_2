@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     lazy var game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2 )
     // using lazy can aviod that initializer cannot use instance, but lazy cannot use didset {}
     
-
     var flipsCount = 0 {
         didSet {
             flipsLabel.text = "Flips: \(flipsCount)"
@@ -33,7 +32,6 @@ class ViewController: UIViewController {
         } else {
             print("The card is out of range")
         }
-        
     }
     
     func updateViewFromModel() {
@@ -71,7 +69,5 @@ class ViewController: UIViewController {
          }
          */
     }
-    
-    
 }
 
